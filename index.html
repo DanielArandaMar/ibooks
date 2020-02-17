@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBooks</title> <!-- font-family: 'Roboto', sans-serif;
+    -->
+    <script src="https://kit.fontawesome.com/c0a5ac8484.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body> 
+
+    <section id="title" class="title-page-section">
+        <div>
+           <h1 class="title"> iBooks.com </h1>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <nav>
+                    <span class="options" id="btnShowMenu"> <i class="fas fa-bars"></i> </span>
+                    <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                    <a href="#" id="uploadBookLink"><i class="fas fa-plus"></i> Subir un libro</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="menu" id="menu">
+
+                <a href="#" class="item" id="btnMydownloads">
+                    <span class="icon"><i class="fas fa-download"></i></span>
+                    <span class="name">Descargas</span>
+                </a>
+
+                <a href="index.html" class="item">
+                    <span class="icon"><i class="fas fa-book"></i></span>
+                    <span class="name">Libros</span>
+                </a>
+                
+        </div>
+       
+
+        <div class="row" id="books">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/bookred.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">La caida de los gigantes.</p>
+                    </div>
+                    <div class="btns">
+                        <span class="text-muted book-id" id="book-id">30500</span>
+                        <span class="float-right icon btnDownload"><i class="fas fa-download"></i></span>
+                    </div>
+                 </div>
+
+                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/bookgreen.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">La segunda guerra mundial versión Alemania.</p>
+                    </div>
+                    <div class="btns">
+                        <span class="text-muted book-id" id="book-id">82000</span>
+                        <span class="float-right icon btnDownload"><i class="fas fa-download"></i></span>
+                    </div>
+                 </div>
+            
+                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/bookPurple.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">No suspires. </p>
+                    </div>
+                    <div class="btns">
+                        <span class="text-muted book-id" id="book-id">19233</span>
+                        <span class="float-right icon btnDownload"><i class="fas fa-download"></i></span>
+                    </div>
+                 </div>
+
+                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/bookBlue.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Los incomparables de Nueva York</p>
+                    </div>
+                    <div class="btns">
+                        <span class="text-muted book-id" id="book-id">31230</span>
+                        <span class="float-right icon btnDownload"><i class="fas fa-download"></i></span>
+                    </div>
+                 </div>
+
+                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/bookBlue.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">No regreses a la casa 2</p>
+                    </div>
+                    <div class="btns">
+                        <span class="text-muted book-id" id="book-id">90300</span>
+                        <span class="float-right icon btnDownload"><i class="fas fa-download"></i></span>
+                    </div>
+                 </div>
+
+                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/bookGreen2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Los 30 hábitos de los millonarios altamente efectivos.</p>
+                    </div>
+                    <div class="btns">
+                        <span class="text-muted book-id" id="book-id">89100</span>
+                        <span class="float-right icon btnDownload"><i class="fas fa-download"></i></span>
+                    </div>
+                 </div>
+
+            
+        </div>
+        
+    </div>
+
+    <div class="black-screen" id="upload-book">
+        <div class="container">
+            <div class="row">   
+                <div class="col-12">
+                    <div class="wrapper">
+                       <div class="head">
+                           <span class="text-muted"><i class="fas fa-plus"></i> Subir un libro </span>
+                           <span class="close-b-screen float-right"><i class="fas fa-times"></i></span>
+                       </div>
+                       <div class="body pt-3">
+                        <form action="" class="upload-book">
+                            <div class="group">
+                                <span class="icon"><i class="fas fa-signature"></i></span>
+                                <input type="text" placeholder="Nombre del Libro" id="name">
+                            </div>
+                            <div class="group">
+                                <span class="icon"><i class="fas fa-file-alt"></i></span>
+                                <textarea placeholder="Descripsión" id="content"></textarea>
+                            </div>
+                            <span>Selecciona una imagen para el libro: </span>
+                            <div class="group">
+                                
+                                <div id="images" class="images-to-upload">
+
+                                    <div class="image image-book green-book" id="greenBook">
+                                        <img src="img/bookGreen.png" class="imageToUpload">
+                                    </div>
+                                    
+                                    <div class="image image-book red-book" id="redBook">
+                                        <img src="img/bookRed.png"   class="imageToUpload">
+                                    </div>
+
+                                    <div class="image image-book purple-book" id="purpleBook">
+                                        <img src="img/bookPurple.png" class="imageToUpload">
+                                    </div>
+
+                                    <div class="image image-book purple2-book" id="yellowBook">
+                                        <img src="img/bookYellow.png" class="imageToUpload">
+                                    </div>
+
+                                    <div class="image image-book purple-book" id="greenBook2">
+                                        <img src="img/bookGreen2.png" class="imageToUpload">
+                                    </div>
+                                    
+                                    <div class="image image-book purple-book" id="blueBook">
+                                        <img src="img/bookBlue.png"  class="imageToUpload">
+                                    </div>
+
+                                </div>
+                              
+                            </div>
+                            <div class="alert-form" id="alert-form">
+                                <span>Ingresa todos los datos</span>
+                            </div>
+                            <input type="submit" class="btn-custom" value="Subir" id="btnSubmit">
+                        </form>
+                       </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="black-screen" id="myDownloads">
+        <div class="container">
+            <div class="row">   
+                <div class="col-12">
+                    <div class="wrapper">
+                       <div class="head">
+                           <span class="text-muted"><i class="fas fa-download"></i> Mis descargas </span>
+                           <span class="close-b-screen-download float-right"><i class="fas fa-times"></i></span>
+                       </div>
+                       <div class="body pt-3">
+                            <span class="btn btn-light btn-sm float-right" id="btnOptions"> Opciones</span>
+                            <div class="books" id="downloadedBooks">
+                               
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mensaje de libro descargado a la plataforma -->
+    <div class="alert-custom" id="alert">
+        <span> ¡ Libro descargado con exito ! </span>
+    </div>
+    <!-- -----  -->
+
+      <!-- Mensaje de libro subido a la plataforma -->
+    <div class="alert-custom" id="alertBookUploaded">
+        <span> ¡ El libro se ha subido con exito ! </span>
+    </div>
+    <!-- -----  -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
